@@ -27,12 +27,12 @@ namespace PoS
     /// </summary>
     public partial class EmployeesAccount : Page
     {      
-        XElement xElement;
+        public XElement EmployersXML;
 
         public EmployeesAccount()
         {
             InitializeComponent();
-            xElement = XElement.Load("Employees.xml");
+            EmployersXML = XElement.Load("Employees.xml");
             LoadElements();
         }
 
@@ -49,12 +49,12 @@ namespace PoS
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            IEnumerable<XElement> childlist = from el in xElement.Elements() select el;
+            IEnumerable<XElement> childlist = from el in EmployersXML.Elements() select el;
 
             foreach (XElement text in childlist) asd.Content = text;          // wszystkie elementy
 
             IEnumerable<string> textSegs =
-            from seg in xElement.Descendants("Name")
+            from seg in EmployersXML.Descendants("Name")
                 select (string)seg;
 
             string str = textSegs.Aggregate(new StringBuilder(),
@@ -66,17 +66,17 @@ namespace PoS
 
 
             string grandChild3 = (string)
-            (from el in xElement.Descendants("Name")
+            (from el in EmployersXML.Descendants("Name")
              select el).First();
 
             asd.Content = grandChild3; //pierwszy element węzla
 
 
             IEnumerable<string> textSegs2 =
-             from seg in xElement.Descendants("Name")
+             from seg in EmployersXML.Descendants("Name")
              select (string)seg;
 
-            string str2 = textSegs.Aggregate(new StringBuilder(),
+            string str2 = textSegs2.Aggregate(new StringBuilder(),
                 (sb, i) => sb.Append(i),
                 sp => sp.ToString()
             );  //wszystkie elementy o konkretnej wartosci
@@ -100,12 +100,25 @@ namespace PoS
             
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void AddElementClick(object sender, RoutedEventArgs e)
         {
-            var programWindow = new AddEmployee(empNo);
+            var programWindow = new AddEmployee(empNo,"add");
             programWindow.Show();
             empNo++;            
             LoadElements();
-        }        
+        }
+        private void EditElementClick(object sender, RoutedEventArgs e)
+        {
+            var programWindow  = new AddEmployee(selectedEmployee,EmployersXML);
+            programWindow.Show();
+        }
+
+
+        int selectedEmployee;
+
+        private void NameGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedEmployee = NameGrid.SelectedIndex;
+        }
     }
 }

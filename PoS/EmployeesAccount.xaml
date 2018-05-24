@@ -9,11 +9,11 @@
       Title="EmployeesAccount">
 
     <Grid Background="#FFFBFBFB">
-        <Button x:Name="asd" Content="LINQ wyszukiwanie" HorizontalAlignment="Left" Margin="50,38,0,0" VerticalAlignment="Top" Width="183" Height="56" Click="Button_Click"/>
-        <Button x:Name="bbb" Content="Tworzenie xml" HorizontalAlignment="Left" Margin="483,38,0,0" VerticalAlignment="Top" Width="183" Height="56" Click="Button_Click_1"/>
-        <Button Content="Edycja elementu" HorizontalAlignment="Left" Margin="50,195,0,0" VerticalAlignment="Top" Width="126" Height="61"/>
-        <Button Content="Dodaj element" HorizontalAlignment="Left" Margin="50,94,0,0" VerticalAlignment="Top" Width="126" Height="69" Click="Button_Click_2"/>
-        <DataGrid Height="287" Width="540" HorizontalAlignment="Left" Margin="176,94,0,0" Name="NameGrid" VerticalAlignment="Top" RowHeight="30" ColumnWidth="180" HorizontalContentAlignment="Center"/>
+        <Button x:Name="asd" Content="LINQ wyszukiwanie" HorizontalAlignment="Left" Margin="236,33,0,0" VerticalAlignment="Top" Width="132" Height="19" Click="Button_Click"/>
+        <Button x:Name="bbb" Content="Tworzenie xml" HorizontalAlignment="Left" Margin="368,33,0,0" VerticalAlignment="Top" Width="159" Height="21" Click="Button_Click_1"/>
+        <Button Content="Edycja elementu" HorizontalAlignment="Left" Margin="145,33,0,0" VerticalAlignment="Top" Width="91" Height="19" Click="EditElementClick"/>
+        <Button Content="Dodaj element" HorizontalAlignment="Left" Margin="60,33,0,0" VerticalAlignment="Top" Width="85" Height="19" Click="AddElementClick"/>
+        <DataGrid Height="287" Width="600" HorizontalAlignment="Left" Margin="60,52,0,0" Name="NameGrid" VerticalAlignment="Top" RowHeight="30" ColumnWidth="200" HorizontalContentAlignment="Center" SelectionChanged="NameGrid_SelectionChanged"/>
 
     </Grid>
 </Page>
