@@ -7,7 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoS", "PoS.csproj", "{38828
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{78746F85-216A-4D5B-98FD-FF369DC51B42}"
 	ProjectSection(SolutionItems) = preProject
-		Employees.xml = Employees.xml
 		XMLFile1.xml = XMLFile1.xml
 	EndProjectSection
 EndProject

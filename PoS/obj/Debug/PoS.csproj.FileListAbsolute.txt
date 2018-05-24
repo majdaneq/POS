@@ -1,6 +1,3 @@
-C:\Users\szymo\Desktop\POS\POS\PoS\bin\Debug\PoS.exe.config
-C:\Users\szymo\Desktop\POS\POS\PoS\bin\Debug\PoS.exe
-C:\Users\szymo\Desktop\POS\POS\PoS\bin\Debug\PoS.pdb
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\App.g.cs
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\PoS_MarkupCompile.cache
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\PoS_MarkupCompile.lref
@@ -28,4 +25,11 @@ C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\InventoryItems.baml
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\Ledgers.baml
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\ManageProduct.baml
 C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\PrintInvoice.baml
-C:\Users\szymo\Desktop\POS\POS\PoS\bin\Debug\XMLFile.xml
+C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\PoS.csprojResolveAssemblyReference.cache
+C:\Users\szymo\Desktop\POS\POS\PoS\XMLFile.xml
+C:\Users\szymo\Desktop\POS\POS\PoS\Employees.xml
+C:\Users\szymo\Desktop\POS\POS\PoS\PoS.exe.config
+C:\Users\szymo\Desktop\POS\POS\PoS\PoS.exe
+C:\Users\szymo\Desktop\POS\POS\PoS\PoS.pdb
+C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\AddEmployee.g.cs
+C:\Users\szymo\Desktop\POS\POS\PoS\obj\Debug\AddEmployee.baml

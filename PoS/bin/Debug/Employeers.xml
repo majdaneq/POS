@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Employees ID="Id_value">
+  <Employee>
+    <Name>Leszek</Name>
+    <Surname>Klich</Surname>
+    <PhoneNumber>000 000-00-00</PhoneNumber>
+  </Employee>
+  <Employee>
+    <Name>Adam</Name>
+    <Surname>Plata</Surname>
+    <PhoneNumber>000 000-00-00</PhoneNumber>
+  </Employee>
+  <Employee />
+  <Name>David</Name>
+  <Surname>Homik</Surname>
+  <PhoneNumber>666-666-666</PhoneNumber>
+</Employees>

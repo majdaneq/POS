@@ -15,7 +15,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="42,98,0,0" TextWrapping="Wrap" Text="User:" VerticalAlignment="Top" Height="32" Width="83" FontSize="20" TextDecorations="Underline" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="126.918,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20" TextDecorations="{DynamicResource {x:Static SystemFonts.CaptionFontTextDecorationsKey}}" Name="UserName" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="42,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="97" FontSize="20" Text="Password:" TextDecorations="Underline" Grid.ColumnSpan="2"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="126.918,200,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.487,2.698" Height="32" Name="Password" Grid.Column="1"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="126.918,200,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.487,2.698" Height="32" Name="Password" Grid.Column="1" KeyDown="Password_KeyDown"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="19.918,285,0,0" VerticalAlignment="Top" Width="182" Height="50" FontSize="20" FontWeight="Bold" Click="Button_Click" Grid.Column="1"/>
 
     </Grid>

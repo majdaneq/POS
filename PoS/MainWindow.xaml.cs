@@ -41,5 +41,10 @@ namespace PoS
                 tryPassword--;
             };
         }
+
+        private void Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter) Button_Click(sender,e);
+        }
     }
 }
